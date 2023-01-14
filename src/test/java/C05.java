@@ -4,6 +4,6 @@ public class C05 {
 
     @Test
     public void Test(){
-        System.out.println("hello");
+     //   System.out.println("hello");
     }
 }
