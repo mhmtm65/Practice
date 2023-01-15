@@ -26,6 +26,7 @@ public class C04 {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
+
         // 'http://automationexercise.com' URL'sine gidin
         driver.get("http://automationexercise.com");
 
