@@ -1,3 +1,5 @@
+package project;
+
 import org.junit.Test;
 
 public class C11 {

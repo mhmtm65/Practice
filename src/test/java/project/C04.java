@@ -1,3 +1,5 @@
+package project;
+
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
@@ -15,7 +17,7 @@ public class C04 {
     @Test
     public void Test01() throws InterruptedException {
 
-         Faker faker=new Faker();
+        Faker faker = new Faker();
 
         // Tarayıcıyı başlatın
         WebDriverManager.chromedriver().setup();
@@ -27,7 +29,7 @@ public class C04 {
         driver.get("http://automationexercise.com");
 
         // Ana sayfanın başarıyla göründüğünü doğrulayın
-        String exceptedTitle= driver.getTitle();
+        String exceptedTitle = driver.getTitle();
         System.out.println("exceptedTitle = " + exceptedTitle);
 
         String actualTitle = "Automation Exercise";
@@ -51,7 +53,7 @@ public class C04 {
 
         //6. Doğru e-posta adresini ve şifreyi girin
         WebElement nameTextBox = driver.findElement(By.xpath("//input[@placeholder='Email Address']"));
-        nameTextBox.sendKeys("aron.rolfson@gmail.com", Keys.TAB ,"123456");
+        nameTextBox.sendKeys("aron.rolfson@gmail.com", Keys.TAB, "123456");
 
 
         //7. 'Giriş' düğmesine tıklayın
@@ -68,11 +70,9 @@ public class C04 {
         Thread.sleep(1000);
 
         //10. Kullanıcının oturum açma sayfasına yönlendirildiğini doğrulayın
-       String loginSayfasi= driver.getCurrentUrl();
-       String actualUrl1="https://automationexercise.com/login";
-       Assert.assertEquals("Url eslesmiyor",loginSayfasi,actualUrl1);
-
-
+        String loginSayfasi = driver.getCurrentUrl();
+        String actualUrl1 = "https://automationexercise.com/login";
+        Assert.assertEquals("Url eslesmiyor", loginSayfasi, actualUrl1);
 
 
     }
