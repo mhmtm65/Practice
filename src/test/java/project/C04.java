@@ -17,6 +17,7 @@ public class C04 {
     @Test
     public void Test01() throws InterruptedException {
 
+
         Faker faker = new Faker();
 
         // Tarayıcıyı başlatın
