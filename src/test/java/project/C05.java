@@ -15,6 +15,7 @@ public class C05 extends TestBase {
 
     @Test
     public void Test() throws IOException {
+
         //   Tarayıcıyı başlatın
 
         //2. 'http://automationexercise.com' URL'sine gidin
